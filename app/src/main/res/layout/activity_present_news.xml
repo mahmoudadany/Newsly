@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.present.PresentNews">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView
+            android:id="@+id/presentnews_iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/app_icon" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignBottom="@id/presentnews_iv_photo"
+                android:background="@drawable/testshape"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/openbrowser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_on_browser"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/category_button"
+                android:layout_below="@id/presentnews_iv_photo"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+            android:id="@+id/presentnews_iv_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/arrow_left_shape"/>
+
+            <ImageView
+            android:id="@+id/presentnews_iv_savenews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/save_news"
+            android:layout_alignTop="@id/presentnews_iv_goback"
+            android:layout_alignBottom="@id/presentnews_iv_goback"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/arrow_left_shape"/>
+
+            <TextView
+            android:id="@+id/presentnews_tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+                android:layout_alignBottom="@id/presentnews_iv_photo"
+                android:layout_marginBottom="@dimen/_5sdp"
+            android:text="data" />
+
+            <TextView
+            android:id="@+id/presentnews_tv_auther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_above="@id/presentnews_tv_data" />
+
+            <TextView
+            android:id="@+id/presentnews_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:layout_below="@id/openbrowser"
+            android:text="title" />
+
+            <TextView
+            android:id="@+id/presentnews_tv_description"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/_18ssp"
+            android:gravity="center"
+            android:layout_below="@id/presentnews_tv_title"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Newsly</string>
+    <string name="discover_txt">Discover</string>
+    <string name="api_key">e79a5f7dad75b5cbcad3b34c780b8558</string>
+    <string name="world_news_txt">World news</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_on_browser">Open on Browser</string>
+    <string name="date" tools:ignore="ExtraTranslation">Date: </string>
+</resources>

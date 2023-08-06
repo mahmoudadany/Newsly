@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item>
+    <shape
+        android:shape="oval">
+        <solid android:color="@color/white"/>
+        <size android:width="@dimen/_6sdp" android:height="@dimen/_6sdp"/>
+        <stroke android:width="@dimen/_1sdp" android:color="#4C4C4C"/>
+    </shape>
+</item>
+    <item
+        android:drawable="@drawable/night"
+        android:top="@dimen/_5sdp"
+        android:bottom="@dimen/_5sdp"
+        android:right="@dimen/_5sdp"
+        android:left="@dimen/_5sdp"/>
+
+</layer-list>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainactivity_background"
+        tools:context=".ui.main.MainActivity">
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_above="@id/main_bottomNavigationView" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/main_bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:elevation="@dimen/_5sdp"
+            android:layout_marginEnd="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/navigation_bottom_shape"
+            app:itemTextColor="@color/white"
+            app:labelVisibilityMode="selected"
+            android:layout_alignParentBottom="true"
+            app:itemIconSize="@dimen/_23sdp"
+            app:itemIconTint="@color/endcolor"
+            app:itemRippleColor="@color/mainactivity_background"
+            app:menu="@menu/navigationbutton" />
+    </RelativeLayout>
+</layout>
